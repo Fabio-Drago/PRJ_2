@@ -2,6 +2,7 @@
 Contém programas relacionados com listas e TAD.
 
 Programa 1:
+
 Objetivo Geral:
 O Programa 1 implementa operações em uma lista ligada, incluindo inserção, remoção, busca, impressão, divisão em listas positivas e negativas, e deleção. Ele demonstra o uso de estruturas de dados para gerenciar uma lista dinâmica de elementos.
 
@@ -25,7 +26,9 @@ A busca por um elemento é realizada.
 A lista é dividida em listas de valores positivos e negativos.
 As listas resultantes são impressas.
 Todos os nós das listas são deletados.
+
 Programa 2:
+
 Objetivo Geral:
 O Programa 2 simula um sorteio entre candidatos usando uma lista circular duplamente ligada. O sorteio é baseado em uma contagem até um número específico X.
 
