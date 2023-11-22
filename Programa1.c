@@ -2,14 +2,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "programa1.h"
+#include "Programa1.h"
 
 // Inicializa a lista ligada.
 void iniciarLista(struct ListaLigada1* lista) {
     lista->inicio = NULL;
 }
 
-// Insere um novo nÛ no final da lista com o valor especificado.
+// Insere um novo n√≥ no final da lista com o valor especificado.
 void inserirNoFim(struct ListaLigada1* lista, int valor) {
     struct No1* novoNo = malloc(sizeof(struct No1));
     novoNo->valor = valor;
@@ -26,7 +26,7 @@ void inserirNoFim(struct ListaLigada1* lista, int valor) {
     }
 }
 
-// Remove o nÛ com o valor especificado da lista.
+// Remove o n√≥ com o valor especificado da lista.
 void removerNo(struct ListaLigada1* lista, int valor) {
     struct No1* atual = lista->inicio;
     struct No1* ant = NULL;
@@ -56,7 +56,7 @@ void imprimirLista(struct ListaLigada1* lista) {
     printf("\n");
 }
 
-// Busca um elemento na lista e retorna o nÛ correspondente.
+// Busca um elemento na lista e retorna o n√≥ correspondente.
 struct No1* buscarElemento(struct ListaLigada1* lista, int valor) {
     struct No1* atual = lista->inicio;
     while (atual != NULL) {
@@ -81,7 +81,7 @@ void dividirLista(struct ListaLigada1* lista, struct ListaLigada1* listaPositivo
     }
 }
 
-// Deleta todos os nÛs da lista liberando a memÛria alocada.
+// Deleta todos os n√≥s da lista liberando a mem√≥ria alocada.
 void deletarLista(struct ListaLigada1* lista) {
     struct No1* atual = lista->inicio;
     while (atual != NULL) {
@@ -92,12 +92,12 @@ void deletarLista(struct ListaLigada1* lista) {
     lista->inicio = NULL;
 }
 
-// FunÁ„o principal que executa o programa.
+// Fun√ß√£o principal que executa o programa.
 void programa1_main() {
     struct ListaLigada1 minhaLista;
     iniciarLista(&minhaLista);
 
-    // InserÁ„o de elementos na lista original.
+    // Inser√ß√£o de elementos na lista original.
     inserirNoFim(&minhaLista, 5);
     inserirNoFim(&minhaLista, -3);
     inserirNoFim(&minhaLista, 8);
@@ -108,9 +108,9 @@ void programa1_main() {
     printf("Lista original: ");
     imprimirLista(&minhaLista);
 
-    // Remove um nÛ da lista.
+    // Remove um n√≥ da lista.
     removerNo(&minhaLista, 0);
-    printf("Lista apÛs remover o elemento 0: ");
+    printf("Lista ap√≥s remover o elemento 0: ");
     imprimirLista(&minhaLista);
 
     // Busca um elemento na lista.
@@ -118,7 +118,7 @@ void programa1_main() {
     if (resultadoBusca != NULL) {
         printf("Elemento 8 encontrado.\n");
     } else {
-        printf("Elemento 8 n„o encontrado.\n");
+        printf("Elemento 8 n√£o encontrado.\n");
     }
 
     // Divide a lista em positivos e negativos.
@@ -134,7 +134,7 @@ void programa1_main() {
     printf("Lista de negativos: ");
     imprimirLista(&listaNegativos);
 
-    // Deleta todos os nÛs das listas.
+    // Deleta todos os n√≥s das listas.
     deletarLista(&minhaLista);
     deletarLista(&listaPositivos);
     deletarLista(&listaNegativos);
